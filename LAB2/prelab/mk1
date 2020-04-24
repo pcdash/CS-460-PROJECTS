@@ -1,0 +1,9 @@
+#!/bin/sh
+
+arm-none-eabi-as -o ts.o ts1.s			# assemble ts1.s to ts.o
+arm-none-eabi-ld -T t.ld -o t.elf ts.o		# link ts.o to the t.elf file
+arm-none-eabi-nm t.elf				# show symbols in t.elf
+arm-none-eabi-objcopy -O binary t.elf t.bin	# objcopy t.elf to t.bin
+
+# Run the t.b on the ARM versatilepb virtual machine
+qemu-system-arm -M versatilepb -kernel t.bin -nographic -serial /dev/null

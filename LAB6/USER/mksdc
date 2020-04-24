@@ -1,0 +1,10 @@
+#create sdimage with 1024 1KB blocks
+dd if=/dev/zero of=sdimage bs=1024 count=1024
+
+#format as an ext2 file system
+mke2fs -b 1024 sdimage 1024
+
+#Mount device and add files
+mount sdimage /mnt
+(cd /mnt; mkdir bin boot dev etc tmp user)
+umount /mnt

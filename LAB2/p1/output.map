@@ -1,0 +1,154 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o)
+                              t.o (__aeabi_uidiv)
+/usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+
+Allocating common symbols
+Common symbol       size              file
+
+N                   0x4               t.o
+up                  0x4               t.o
+sum                 0x4               t.o
+uart                0x20              t.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000010000                . = 0x10000
+
+.start          0x0000000000010000       0x10
+ ts.o(.text)
+ .text          0x0000000000010000       0x10 ts.o
+                0x0000000000010000                start
+
+.text           0x0000000000010010      0x918
+ *(.text)
+ .text          0x0000000000010010      0x800 t.o
+                0x0000000000010010                uart_init
+                0x00000000000100a8                ugetc
+                0x00000000000100f4                uputc
+                0x0000000000010150                ugets
+                0x00000000000101cc                uprints
+                0x0000000000010220                rpnum
+                0x00000000000102b8                uputd
+                0x0000000000010308                uputx
+                0x0000000000010368                ufprintf
+                0x0000000000010514                strcmp
+                0x000000000001060c                main
+ .text          0x0000000000010810      0x114 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o)
+                0x0000000000010810                __udivsi3
+                0x0000000000010810                __aeabi_uidiv
+                0x0000000000010904                __aeabi_uidivmod
+ .text          0x0000000000010924        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_dvmd_tls.o)
+                0x0000000000010924                __aeabi_ldiv0
+                0x0000000000010924                __aeabi_idiv0
+
+.rodata         0x0000000000010928       0x8b
+ .rodata        0x0000000000010928       0x8b t.o
+
+.glue_7         0x00000000000109b4        0x0
+ .glue_7        0x00000000000109b4        0x0 linker stubs
+
+.glue_7t        0x00000000000109b4        0x0
+ .glue_7t       0x00000000000109b4        0x0 linker stubs
+
+.vfp11_veneer   0x00000000000109b4        0x0
+ .vfp11_veneer  0x00000000000109b4        0x0 linker stubs
+
+.v4_bx          0x00000000000109b4        0x0
+ .v4_bx         0x00000000000109b4        0x0 linker stubs
+
+.iplt           0x00000000000109b4        0x0
+ .iplt          0x00000000000109b4        0x0 ts.o
+
+.rel.dyn        0x00000000000109b4        0x0
+ .rel.iplt      0x00000000000109b4        0x0 ts.o
+
+.data           0x00000000000109b4       0x30
+ *(.data)
+ .data          0x00000000000109b4        0x0 ts.o
+ .data          0x00000000000109b4       0x30 t.o
+                0x00000000000109b4                v
+                0x00000000000109dc                tab
+                0x00000000000109e0                ctable
+ .data          0x00000000000109e4        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o)
+ .data          0x00000000000109e4        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_dvmd_tls.o)
+
+.igot.plt       0x00000000000109e4        0x0
+ .igot.plt      0x00000000000109e4        0x0 ts.o
+
+.bss            0x00000000000109e4       0x2c
+ *(.bss COMMON)
+ .bss           0x00000000000109e4        0x0 ts.o
+ .bss           0x00000000000109e4        0x0 t.o
+ COMMON         0x00000000000109e4       0x2c t.o
+                0x00000000000109e4                N
+                0x00000000000109e8                up
+                0x00000000000109ec                sum
+                0x00000000000109f0                uart
+ .bss           0x0000000000010a10        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o)
+ .bss           0x0000000000010a10        0x0 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_dvmd_tls.o)
+                0x0000000000010a10                . = ALIGN (0x8)
+                0x0000000000020a10                . = (. + 0x10000)
+                0x0000000000020a10                stack_top = .
+LOAD ts.o
+LOAD t.o
+LOAD /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a
+OUTPUT(t.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x2e
+ .ARM.attributes
+                0x0000000000000000       0x22 ts.o
+ .ARM.attributes
+                0x0000000000000022       0x32 t.o
+ .ARM.attributes
+                0x0000000000000054       0x18 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000000000000006c       0x18 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_dvmd_tls.o)
+
+.comment        0x0000000000000000       0x31
+ .comment       0x0000000000000000       0x31 t.o
+                                         0x32 (size before relaxing)
+
+.debug_line     0x0000000000000000      0x223
+ .debug_line    0x0000000000000000       0x37 ts.o
+ .debug_line    0x0000000000000037      0x119 t.o
+ .debug_line    0x0000000000000150       0x78 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o)
+ .debug_line    0x00000000000001c8       0x5b /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_dvmd_tls.o)
+
+.debug_info     0x0000000000000000      0x570
+ .debug_info    0x0000000000000000       0x4e ts.o
+ .debug_info    0x000000000000004e      0x3c6 t.o
+ .debug_info    0x0000000000000414       0xae /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o)
+ .debug_info    0x00000000000004c2       0xae /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_dvmd_tls.o)
+
+.debug_abbrev   0x0000000000000000      0x195
+ .debug_abbrev  0x0000000000000000       0x14 ts.o
+ .debug_abbrev  0x0000000000000014      0x159 t.o
+ .debug_abbrev  0x000000000000016d       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x0000000000000181       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_dvmd_tls.o)
+
+.debug_aranges  0x0000000000000000       0x80
+ .debug_aranges
+                0x0000000000000000       0x20 ts.o
+ .debug_aranges
+                0x0000000000000020       0x20 t.o
+ .debug_aranges
+                0x0000000000000040       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x0000000000000060       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_dvmd_tls.o)
+
+.debug_str      0x0000000000000000       0xef
+ .debug_str     0x0000000000000000       0xef t.o
+                                        0x101 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x1a8
+ .debug_frame   0x0000000000000000      0x188 t.o
+ .debug_frame   0x0000000000000188       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1//libgcc.a(_udivsi3.o)
