@@ -9,7 +9,9 @@ All projects from the Washington State University Operating Systems and Computer
 # Usage
 All folders should contain an executable you can run. 
 
+```
 ADD MAKE FILES TO ALL FOLDERS
+```
 
 # Help
 
