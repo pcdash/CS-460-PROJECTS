@@ -28,4 +28,6 @@ sudo apt-get install qemu-system-arm
 These programs rely on Ubuntu versions 15.01 to 18.04. It may be possible to run on other linux systems, but I have not tested others.
 
 # Students
-If you have found this repository because you are looking for solutions to homework, then you have succeeded and you are welcome to learn from my implementations. However, Computer Science 460, the class for which I did these assignments, requires knowledge of what the code is actually doing to pass the exit interview. If you are unable to explain where something happens, and why it does, then the professor will know, and you will be reported for plagiarism. With that being said, read my code, read the comments, understand why something happens, and then build your own implementation. Good luck on your projects!
+If you have found this repository because you are looking for solutions to homework, then you have succeeded and you are welcome to learn from my implementations. However, Computer Science 460, the class for which I did these assignments, requires knowledge of what the code is actually doing to pass the exit interview. If you are unable to explain where something happens, and why it does, then the professor will know, and you will be reported for plagiarism. 
+
+With that being said, read my code, read the comments, understand why something happens, and then build your own implementation. Good luck on your projects!
