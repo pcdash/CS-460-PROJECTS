@@ -4,7 +4,7 @@ Operating Systems and Computer Architecture programs, created at Washington Stat
 Spring Semester 2020, The Year of the Virus.
 
 # Description
-All projects from the Washington State University Operating Systems and Computer Architecture class. Base code (Not included) for the requirements is from K.C. Wang. They are available in his books "Design and Implementation of the MTX Operating System", "Embedded Real Time Operating Systems", and "Systems Programming in Unix/Linux".
+All projects from the Washington State University Operating Systems and Computer Architecture class. Original Source code (Not included) for the requirements is from K.C. Wang. They are available in his books "Design and Implementation of the MTX Operating System", "Embedded Real Time Operating Systems", and "Systems Programming in Unix/Linux".
 
 # Usage
 All folders should contain an executable you can run. 
